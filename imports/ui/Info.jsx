@@ -6,7 +6,7 @@ export const Info = () => {
   const isLoading = useSubscribe('links');
   const links = useFind(() => LinksCollection.find());
 
-  if (isLoading()) {
+  if(isLoading()) {
     return <div>Loading...</div>;
   }
 
